@@ -1,4 +1,4 @@
-# Matematicas-Especiales
+# Matematicas Especiales
 Aquí se depositarán todos los ejercicios que se pueden encontrar en un parcial de matemáticas avanzadas
 
 # Ejercicios
@@ -264,3 +264,238 @@ $\frac{L}{2}<x<L$
 $$
 \boxed{a_{10}=-\frac{2K}{25\pi^2}}
 $$
+
+---
+
+12) Vía series de Fourier, encontrar una serie de términos constantes que proporcione el valor de
+
+$$
+\frac{\pi}{4}.
+$$
+
+**Respuesta:**
+
+$$
+\boxed{\frac{\pi}{4}=1-\frac13+\frac15-\frac17+\cdots=\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}}
+$$
+
+---
+
+13) El desarrollo de
+
+$$
+f(z)=\frac{2i}{4+iz}
+$$
+
+en serie de Taylor alrededor de
+
+$$
+z_0=-2i
+$$
+
+tiene como región de convergencia:
+
+**Respuesta:**
+
+$$
+\boxed{|z+2i|<6}.
+$$
+
+---
+
+14) Sea
+
+$$
+R={z\in \mathbb{C}}
+$$
+
+tal que
+
+$$
+|z+i|+|z-i|\le 4
+$$
+
+y
+
+$$
+\frac{\pi}{4}\le \{Arg}(z)\le \frac{3\pi}{4}.
+$$
+
+Determinar si
+
+$$
+z=-2i
+$$
+
+pertenece a:
+
+a) \(R\)
+
+b) Interior de \(R\)
+
+c) Exterior de \(R\)
+
+d) Frontera de \(R\)
+
+**Respuesta:**
+
+$$
+\boxed{\text{c) Exterior de }R}
+$$
+
+---
+
+15) Sean
+
+$$
+w_0,w_1,w_2,w_3,w_4,w_5,w_6,w_7
+$$
+
+las raíces octavas de la unidad.
+
+Determinar cuál de las siguientes expresiones produce
+
+$$
+w_6.
+$$
+
+a)
+
+$$
+(w_1w_3)^2
+$$
+
+b)
+
+$$
+(w_2w_4)^3
+$$
+
+c)
+
+$$
+(w_4w_7)^4
+$$
+
+d)
+
+$$
+(w_6w_0)^5
+$$
+
+**Respuesta:**
+
+$$
+\boxed{\text{d)}}
+$$
+
+---
+
+16) Sean
+
+$$
+z,w\in\mathbb{C}.
+$$
+
+La expresión
+
+$$
+|z+w|^2+|z-w|^2
+$$
+
+es igual a:
+
+**Respuesta:**
+
+$$
+\boxed{|z+w|^2+|z-w|^2=2\bigl(|z|^2+|w|^2\bigr)}
+$$
+
+---
+
+17) Sea \(C\) cualquier trayectoria simple y cerrada tal que
+
+$$
+1
+$$
+
+pertenece al interior de \(C\), mientras que
+
+$$
+2i
+$$
+
+y
+
+$$
+-2i
+$$
+
+no pertenecen al interior de \(C\).
+
+Si \(C\) se recorre en sentido horario, calcular
+
+$$
+\oint_C
+\frac{e^z}{(z-1)^2(z^2+4)}dz.
+$$
+
+**Respuesta:**
+
+$$
+\boxed{\oint_C\frac{e^z}{(z-1)^2(z^2+4)}dz=-\frac{6\pi e}{25}i}
+$$
+
+---
+
+18) Tomando el valor principal del logaritmo natural complejo, calcular
+
+$$
+i^{\,1-i}.
+$$
+
+**Respuesta:**
+
+$$
+\boxed{i^{1-i}=ie^{\pi/2}}
+$$
+
+---
+
+19) Sea \(C\) cualquier trayectoria simple y cerrada que contenga en su interior a todos los ceros del polinomio
+
+$$
+P(z)=z^3+4z.
+$$
+
+Si \(C\) se recorre en sentido horario, calcular
+
+$$
+\oint_C
+\frac{z-4i}{z^3+4z}dz
+$$
+
+**Respuesta:**
+
+$$
+\boxed{0}
+$$
+
+---
+
+20) Sea
+
+$$
+f(x)=e^{-ax},
+\qquad a>0.
+$$
+
+Hallar la transformada de Fourier de coseno de \(f(x)\).
+
+**Respuesta:**
+
+$$
+\boxed{F_c(\omega)=\sqrt{\frac{2}{\pi}}\frac{a}{a^2+\omega^2}}
+$$
+
+---
