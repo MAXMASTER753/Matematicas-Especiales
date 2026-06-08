@@ -451,7 +451,7 @@ $$
 18) Tomando el valor principal del logaritmo natural complejo, calcular
 
 $$
-i^{\,1-i}.
+i^{1-i}
 $$
 
 **Respuesta:**
@@ -499,3 +499,366 @@ $$
 $$
 
 ---
+
+21) Una función $v$ armónica conjugada de
+
+$$
+u(x,y)=\cos(x)\cosh(y)
+$$
+
+es:
+
+**Respuesta:**
+
+$$
+\boxed{v(x,y)=-\sin(x)\sinh(y)}
+$$
+
+---
+
+22) Calcular el posible valor de
+
+$$
+\left|
+\frac{1}{z-1}
+-\frac{z-\overline z}{2}
++1
+\right|
+$$
+
+sabiendo que
+
+$$
+z\in\mathbb C\setminus\mathbb R
+$$
+
+y
+
+$$
+z+\frac{1}{z-1}\in\mathbb R_{>0}.
+$$
+
+**Respuesta:**
+
+$$
+\boxed{\left|\frac{1}{z-1}-\frac{z-\overline z}{2}+1\right|=\frac{4}{\sqrt3}}
+$$
+
+---
+
+23) Determinar el valor de
+
+$$
+z^{2026}
+$$
+
+si
+
+$$
+z=\frac{1+i\sqrt3}{2}.
+$$
+
+**Respuesta:**
+
+$$
+\boxed{z^{2026}=\frac{1+i\sqrt3}{2}}
+$$
+
+---
+
+24) Calcular la transformada de Fourier de
+
+$$
+f(x)=e^{-a|x|},
+\qquad a>0.
+$$
+
+**Respuesta:**
+
+$$
+\boxed{\widehat f(\omega)=\frac{2a}{\sqrt{2\pi}\(a^2+\omega^2)}}
+$$
+
+---
+
+25. Teniendo en cuenta el valor principal de
+
+$$
+\ln(z),
+$$
+
+determinar
+
+$$
+f'(i)
+$$
+
+si
+
+$$
+f(z)=arcsen(z)
+$$
+
+**Respuesta:**
+
+$$
+\boxed{f'(i)=\frac{1}{\sqrt{2}}}
+$$
+
+---
+
+26) Calcular
+
+$$
+\mathcal{F}\{x^2e^{-5|x|}\}(\omega).
+$$
+
+**Respuesta:**
+
+$$
+\boxed{\mathcal{F}\{x^2e^{-5|x|}\}(\omega)=\frac{20(25-3\omega^2)}{\sqrt{2\pi}(25+\omega^2)^3}}
+$$
+
+---
+
+27) Enuncie, demuestre y ejemplifique el teorema de la integral de cauchy para dominios 3-conexos
+
+### Teorema de la Integral de Cauchy para Dominios 3-Conexos
+
+#### Enunciado
+
+Sea \(D\) un dominio 3-conexo limitado por las curvas simples cerradas y orientadas positivamente
+
+$$
+C,\quad C_1,\quad C_2,
+$$
+
+donde \(C\) es la frontera exterior y \(C_1,C_2\) son las fronteras interiores.
+
+Si
+
+$$
+f:D\cup C\cup C_1\cup C_2\to\mathbb C
+$$
+
+es una función analítica, entonces
+
+$$
+\oint_C f(z)dz=\oint_{C_1} f(z)dz+\oint_{C_2} f(z)dz
+$$
+
+Equivalentemente,
+
+$$
+\oint_C f(z)dz-\oint_{C_1} f(z)dz-\oint_{C_2} f(z)dz=0
+$$
+
+#### Demostración
+
+Consideremos el dominio
+
+$$
+D=\text{Interior}(C)\setminus\left(\text{Interior}(C_1)\cup\text{Interior}(C_2)\right)
+$$
+
+Como \(f\) es analítica en todo \(D\), podemos unir las fronteras mediante curvas auxiliares sin alterar la analiticidad.
+
+La frontera orientada de \(D\) es
+
+$$
+\partial D=C-C_1-C_2.
+$$
+
+Por el Teorema Integral de Cauchy para dominios simplemente conexos,
+
+$$
+\oint_{\partial D}f(z)\,dz=0.
+$$
+
+Sustituyendo la expresión de la frontera:
+
+$$
+\oint_C f(z)dz-\oint_{C_1}f(z)dz-\oint_{C_2}f(z)dz=0
+$$
+
+Por consiguiente,
+
+$$
+\oint_C f(z)dz=\oint_{C_1}f(z)dz+\oint_{C_2}f(z)dz
+$$
+
+Queda demostrado.
+
+$$
+\blacksquare
+$$
+
+#### Ejemplo
+
+Sea
+
+$$
+f(z)=\frac{1}{z}.
+$$
+
+Consideremos un dominio 3-conexo cuya frontera exterior es
+
+$$
+C:\ |z|=3,
+$$
+
+y cuyas fronteras interiores son
+
+$$
+C_1:\ |z-1|=\frac12,
+$$
+
+$$
+C_2:\ |z+1|=\frac12.
+$$
+
+El punto singular
+
+$$
+z=0
+$$
+
+pertenece al dominio.
+
+Calculamos
+
+$$
+\oint_C \frac{1}{z}dz.
+$$
+
+Por la fórmula integral de Cauchy,
+
+$$
+\oint_C \frac{1}{z}dz=2\pi i
+$$
+
+Además,
+
+$$
+\oint_{C_1}\frac{1}{z}dz=0
+$$
+
+porque \(0\) no pertenece al interior de \(C_1\), y también
+
+$$
+\oint_{C_2}\frac{1}{z}dz=0.
+$$
+
+Por tanto,
+
+$$
+\oint_C \frac{1}{z}dz-\oint_{C_1}\frac{1}{z}dz-\oint_{C_2}\frac{1}{z}dz=2\pi i
+$$
+
+Lo cual muestra que el teorema exige que la función sea analítica en todo el dominio 3-conexo. Como
+
+$$
+f(z)=\frac1z
+$$
+
+no es analítica en \(z=0\), las hipótesis del teorema no se cumplen.
+
+
+
+### Ejemplo donde sí se cumplen las hipótesis
+
+Tomemos
+
+$$
+f(z)=z^2.
+$$
+
+La función es entera.
+
+Entonces
+
+$$
+\oint_C z^2dz=\oint_{C_1} z^2dz=\oint_{C_2} z^2dz=0
+$$
+
+Por tanto,
+
+$$
+\oint_C z^2dz=\oint_{C_1} z^2dz+\oint_{C_2} z^2dz
+$$
+
+verificando el Teorema de la Integral de Cauchy para dominios 3-conexos.
+
+---
+
+28) Encontrar todas las series de Taylor y Laurent de
+
+$$
+f(z)=\frac{-2z+3}{z^2-3z+2}
+$$
+
+con centro en
+
+$$
+z_0=0.
+$$
+
+**Respuesta:**
+
+$$
+f(z)=-\sum_{n=0}^{\infty}\frac{1+2^n}{z^{n+1}}\qquad |z|>2
+$$
+
+---
+
+29. Evaluar la integral
+
+$$
+\oint_C f(z)dz,
+$$
+
+donde
+
+$$
+f(z)=\{Im}(z),
+$$
+
+y \(C\) es la circunferencia
+
+$$
+|z|=r,
+$$
+
+recorrida en sentido antihorario.
+
+**Respuesta:**
+
+$$
+\boxed{\oint_C \{Im}(z)dz=-\pi r^2}
+$$
+
+---
+
+30. Encontrar el desarrollo de Laurent de
+
+$$
+f(z)=\frac{1}{z^2+(1-3i)z-3i}
+$$
+
+alrededor de
+
+$$
+z_0=-1.
+$$
+
+**Respuesta:**
+
+$$
+\boxed{f(z)=\sum_{n=1}^{\infty}\frac{(1+3i)^{n-1}}{(z+1)^{n+1}}}
+$$
+
+válida para
+
+$$
+\boxed{|z+1|>\sqrt{10}}
+$$
